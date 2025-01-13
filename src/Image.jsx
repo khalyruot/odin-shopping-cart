@@ -1,22 +1,13 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import App from "./App";
-import Profile from "./Profile";
+import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "profile",
-    element: <Profile />,
-  },
-]);
+const Image = () => {
+  return (
+    <>
+      <p>Hi, I am Popeye! I love to eat Spinach!</p>
+      <Link to="/">Click here</Link>
+    </>
+  );
+};
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>
-);
+export default Image;
