@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const App = () => {
   return (
     <div>
@@ -6,7 +8,7 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <a href="home">Home page</a>
+            <Link to="home">Home page</Link>
           </li>
         </ul>
       </nav>
