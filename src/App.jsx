@@ -8,7 +8,13 @@ const App = () => {
       <nav>
         <ul>
           <li>
-            <Link to="home">Home page</Link>
+            <h1><Link to="home">Home page</Link></h1> 
+          </li>
+          <li>
+            <h1><Link to="home/shoppingcart">Sopping Cart</Link></h1> 
+          </li>
+          <li>
+            <h1><Link to="home/aboutpage">About page</Link></h1>
           </li>
         </ul>
       </nav>
