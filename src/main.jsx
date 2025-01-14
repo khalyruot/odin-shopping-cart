@@ -2,23 +2,21 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
-import Profile from "./Profile";
-import ErrorPage from "./ErrorPage";
+import Home from "./Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
   },
   {
-    path: "profile/:name",
-    element: <Profile />,
+    path: "home",
+    element: <Home />,
   },
 ]);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>,
+  </StrictMode>
 );
