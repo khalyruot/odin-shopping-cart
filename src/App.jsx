@@ -16,6 +16,9 @@ const App = () => {
           <li>
             <h1><Link to="home/aboutpage">About page</Link></h1>
           </li>
+          <li>
+            <h1><Link to="home/image">Image</Link></h1>
+          </li>
         </ul>
       </nav>
     </div>

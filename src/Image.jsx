@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const Image = () => {
   return (
     <>
-      <p>Hi, I am Popeye! I love to eat Spinach!</p>
+      <p>This is image</p>
       <Link to="/">Click here</Link>
     </>
   );

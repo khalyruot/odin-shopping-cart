@@ -5,6 +5,7 @@ import App from "./App";
 import Home from "./Home";
 import ShoppingCart from "./ShoppingCart";
 import Aboutpage from "./Aboutpage";
+import Image from "./Image";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     children: [
       {path: "shoppingcart", element:<ShoppingCart />},
       {path: "aboutpage", element:<Aboutpage />},
+      {path: "image", element:<Image />},
     ],
   },
 ]);
