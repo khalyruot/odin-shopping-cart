@@ -8,7 +8,7 @@ const useImageURL = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/photos", { mode: "cors" })
+    fetch("https://pokeapi.co/api/v2/pokemon/210", { mode: "cors" })
       .then((response) => {
         if (response.status >= 400) {
           throw new Error("server error");
@@ -16,8 +16,8 @@ const useImageURL = () => {
         return response.json();
       })
       .then((response) => {
-        console.log(response[0].url);
-        setImageURL(response[0].url);
+        console.log(response.length);
+        setImageURL(response.sprites.front_default);
       })
       .catch((error) => setError(error))
       .finally(() => setLoading(false));
