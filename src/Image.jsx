@@ -8,7 +8,7 @@ const useImageURL = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon/210", { mode: "cors" })
+    fetch("https://fakestoreapi.com/products/4", { mode: "cors" })
       .then((response) => {
         if (response.status >= 400) {
           throw new Error("server error");
@@ -17,7 +17,7 @@ const useImageURL = () => {
       })
       .then((response) => {
         console.log(response.length);
-        setImageURL(response.sprites.front_default);
+        setImageURL(response.image);
       })
       .catch((error) => setError(error))
       .finally(() => setLoading(false));

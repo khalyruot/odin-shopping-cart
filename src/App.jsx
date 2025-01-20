@@ -1,10 +1,29 @@
 import { Link } from "react-router-dom";
+import './App.css'
 
 const App = () => {
   return (
     <div>
-      <h1>Hello from the main page of the app!</h1>
-      <p>Here are some examples of links to other pages</p>
+       <div id="top_menu_fix">
+    <nav class="navbar navbar-inverse navbar-fixed-top" >
+      <div id="navbar">
+        <div class="container-fluid">
+          <div >
+            <a id="Kong_Fu_Logo" class="navbar-brand"></a>
+          </div>
+        </div>
+        
+        <div>
+          <ul class="nav navbar-nav" id="button_nav">
+            <li><a href="#"><button id="homeTab">Home</button></a></li>
+            <li><a href="#"><button id="menuTab">Shop</button></a></li>
+          </ul>
+        </div>
+      </div>
+        
+    </nav>
+  </div>
+
       <nav>
         <ul>
           <li>
