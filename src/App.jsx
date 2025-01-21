@@ -6,33 +6,26 @@ const App = () => {
     <div>
       <div id="top_menu_fix">
           <nav class="navbar navbar-inverse navbar-fixed-top" >
-                      <div id="navbar">
-                        <div class="container-fluid">
-                          <div >
-                            <a id="shop_logo" class="navbar-brand">bbbbbb</a>
-                          </div>
-                        </div>
-                        
-                        <div>
-                          <ul class="nav navbar-nav" id="button_nav">
-                            <li><a href="#"><button id="homeTab">Home</button></a></li>
-                            <li><a href="#"><button id="menuTab">Shop</button></a></li>
-                          </ul>
-                        </div>
-                      </div>
+            <div id="navbar">
+              <div class="container-fluid">
+                <div >
+                  <a id="shop_logo" class="navbar-brand">bbbbbb</a>
+                </div>
+              </div>
               
+              <div>
+                <ul class="nav navbar-nav" id="button_nav">
+                  <button id="homeTab"><Link to="home">Home</Link></button>
+                  <button id="menuTab"><Link to="home/shoppingcart">Shope</Link></button>
+                </ul>
+              </div>
+            </div> 
           </nav>
       </div>
 
       <div id="homePage">
       <nav>
           <ul>
-            <li>
-              <h1><Link to="home">Home page</Link></h1> 
-            </li>
-            <li>
-              <h1><Link to="home/shoppingcart">Sopping Cart</Link></h1> 
-            </li>
             <li>
               <h1><Link to="home/aboutpage">About page</Link></h1>
             </li>
