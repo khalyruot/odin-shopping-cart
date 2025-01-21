@@ -6,6 +6,7 @@ import Home from "./Home";
 import ShoppingCart from "./ShoppingCart";
 import Aboutpage from "./Aboutpage";
 import Image from "./Image";
+import Cart from "./Cart";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       {path: "shoppingcart", element:<ShoppingCart />},
       {path: "aboutpage", element:<Aboutpage />},
       {path: "image", element:<Image />},
+      {path: "cart", element:<Cart />},
     ],
   },
 ]);

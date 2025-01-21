@@ -17,6 +17,7 @@ const App = () => {
                 <ul class="nav navbar-nav" id="button_nav">
                   <button id="homeTab"><Link to="home">Home</Link></button>
                   <button id="menuTab"><Link to="home/shoppingcart">Shope</Link></button>
+                  <button id="menuTab"><Link to="home/cart">Cart</Link></button>
                 </ul>
               </div>
             </div> 
