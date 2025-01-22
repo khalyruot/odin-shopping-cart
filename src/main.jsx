@@ -14,15 +14,24 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
+    path: "shoppingcart",
+    element:<ShoppingCart />,
+  },
+
+  {
     path: "home",
     element: <Home />,
     children: [
-      {path: "shoppingcart", element:<ShoppingCart />},
       {path: "aboutpage", element:<Aboutpage />},
       {path: "image", element:<Image />},
       {path: "cart", element:<Cart />},
     ],
   },
+  {
+    path:"cart",
+    element: <Cart />
+  },
+  
 ]);
 
 createRoot(document.getElementById("root")).render(
