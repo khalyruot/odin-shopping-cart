@@ -17,6 +17,7 @@ const Home = () => {
                             <ul class="nav navbar-nav" id="button_nav">
                               <li><a href="#"><button id="homeTab">Home</button></a></li>
                               <li><a href="#"><button id="menuTab">Shop</button></a></li>
+                              <li><a href="#"><button id="menuTab">Cart</button></a></li>
                             </ul>
                           </div>
                         </div>
